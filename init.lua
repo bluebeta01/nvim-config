@@ -6,8 +6,6 @@ vim.cmd("set nu")
 vim.cmd("set rnu");
 
 vim.g.mapleader = " "
---vim.cmd("map <Leader>fg :Telescope git_files<Esc>")
---vim.cmd("map <Leader>ff :Telescope find_files<Esc>")
 
 vim.keymap.set('n', '<leader>fg', require('telescope.builtin').git_files, { desc = '[S]earch Git [F]iles' })
 vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
@@ -28,3 +26,4 @@ require("nvim-treesitter.configs").setup({
 	}
 })
 require("mason").setup()
+require("lspinit")

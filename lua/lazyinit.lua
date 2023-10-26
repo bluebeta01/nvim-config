@@ -16,5 +16,10 @@ require("lazy").setup({
 	"ellisonleao/gruvbox.nvim",
 	"nvim-telescope/telescope-fzf-native.nvim",
 	"nvim-treesitter/nvim-treesitter",
-	"williamboman/mason.nvim"
+	"williamboman/mason.nvim",
+	"williamboman/mason-lspconfig",
+	"VonHeikemen/lsp-zero.nvim",
+	"neovim/nvim-lspconfig",
+	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/nvim-cmp"
 })
