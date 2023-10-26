@@ -19,8 +19,10 @@ require("telescope").setup({
 	}
 })
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "cpp" },
-	auto_install = true,
+	--This causes strife because it complains when a compiler isn't installed
+	--Highlighting still works even if this is commented out
+	--ensure_installed = { "cpp" },
+	--auto_install = true,
 	highlight = {
 		enable = true
 	}
